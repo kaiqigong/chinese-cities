@@ -1,6 +1,6 @@
 {
   "name": "chinese-cities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a module that provides chinese provinces, cities and counties.",
   "main": "index.js",
   "scripts": {

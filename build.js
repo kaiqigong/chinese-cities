@@ -6,8 +6,6 @@ var curl        = require('node-curl')
 
 
 var indexUrl = "http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/";
-// file path and base name
-var file = process.argv[2];
 
 console.log('http get: ' + indexUrl);
 
@@ -100,9 +98,9 @@ function build (url) {
     "exports = data;",
     function (err) {
       if (err) {
-        console.error('output file error: ' + file + 'index.js');
+        console.error('output file error: ' + 'index.js');
       } else {
-        console.log('output file: ' + file + 'index.js');
+        console.log('output file: ' + 'index.js');
       }
     });
   });
