@@ -4,7 +4,6 @@ var curl        = require('node-curl')
 ,_            = require('lodash')
 , url         = require('url');
 
-
 var indexUrl = "http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/";
 
 console.log('http get: ' + indexUrl);
@@ -93,14 +92,14 @@ function build (url) {
   }
 
   // write common js
-  fs.writeFile('index.js', 
+  fs.writeFile('data.js', 
     "var data = " + JSON.stringify([provinces, cities, counties], null, '\t') + ";\n" +
     "exports = data;",
     function (err) {
       if (err) {
-        console.error('output file error: ' + 'index.js');
+        console.error('output file error: ' + 'data.js');
       } else {
-        console.log('output file: ' + 'index.js');
+        console.log('output file: ' + 'data.js');
       }
     });
   });
