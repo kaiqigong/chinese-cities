@@ -94,7 +94,7 @@ function build (url) {
   // write common js
   fs.writeFile('data.js', 
     "var data = " + JSON.stringify([provinces, cities, counties], null, '\t') + ";\n" +
-    "exports = data;",
+    "module.exports = data;",
     function (err) {
       if (err) {
         console.error('output file error: ' + 'data.js');
