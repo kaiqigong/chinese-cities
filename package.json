@@ -1,7 +1,11 @@
 {
   "name": "chinese-cities",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a module that provides chinese provinces, cities and counties.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagegong/chinese-cities"
+  },
   "main": "index.js",
   "scripts": {
     "install": "node ./build.js",
