@@ -4,7 +4,7 @@
   "description": "a module that provides chinese provinces, cities and counties.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cagegong/chinese-cities"
+    "url": "https://github.com/kaiqigong/chinese-cities"
   },
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "cities",
     "counties"
   ],
-  "author": "cagegong",
+  "author": "kaiqigong",
   "license": "MIT",
   "dependencies": {
     "htmlparser2": "*",
